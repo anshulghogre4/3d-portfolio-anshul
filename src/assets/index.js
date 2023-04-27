@@ -29,6 +29,9 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import bootstrap from "./tech/bootstrap.png";
 import springboot from "./tech/springboot.png";
+import livelink from "./livelink.png";
+import modelman from "./modelman.png";
+import anshul from "./anshul.jpg";
 
 export {
   logo,
@@ -62,4 +65,7 @@ export {
   dotnet,
   springboot,
   bootstrap,
+  livelink,
+  modelman,
+  anshul,
 };

@@ -26,6 +26,7 @@ import {
   dotnet,
   mysql,
   bootstrap,
+  anshul,
 } from "../assets";
 
 export const navLinks = [
@@ -40,6 +41,10 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
+  },
+  {
+    id: "blogs",
+    title: "Blogs",
   },
   {
     id: "resume",
@@ -398,7 +403,14 @@ const uIProjects = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
   },
 ];
-
+const myWords = [
+  {
+    text: "Here you can download my resume by clicking on Download button. I will be glad to our cooperation.",
+    name: "Anshul",
+    designation: "The owner",
+    image: anshul,
+  },
+];
 export {
   services,
   technologies,
@@ -409,4 +421,5 @@ export {
   reactProjects,
   javaScriptProjects,
   uIProjects,
+  myWords,
 };

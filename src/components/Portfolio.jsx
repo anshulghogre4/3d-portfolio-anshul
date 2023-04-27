@@ -1,12 +1,11 @@
 import React from "react";
 import { useEffect, useState } from "react";
-
-
+import { Tilt } from "react-tilt";
+import { github,livelink } from "../assets";
 import { motion } from "framer-motion";
-
+import {  textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
 import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from "../constants/constants";
 
 
@@ -14,11 +13,10 @@ import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from
  const  PortfolioList =({ id, title, active, setSelected, index }) => {
     return (
         <motion.div
-    variants={fadeIn("", "spring", index* 0.5, 0.75)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
+        
   >
       <li
-        className={active ? "portfolioList active" : "portfolioList"}
+        className={`active ? "portfolioList active" : "portfolioList" bg-indigo-950 block active:bg-indigo-700 px-[1.5rem] py-[0.5rem]  rounded-2xl   cursor-pointer`}
         onClick={() => setSelected(id)}
       >
         {title}
@@ -70,38 +68,56 @@ import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from
   }, [selected]);
 
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
+    <div className={`mt-4 bg-black-100 rounded-[20px]`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-tertiary rounded-2xl ${styles.padding} h-[13rem]`}
       >
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>More Projects</p>
-          <h2 className={styles.sectionHeadText}>Portfolio</h2>
+        <motion.div variants={textVariant()} >
+        <p className={`${styles.sectionSubText} `}>More Projects</p>
+        <h2 className={`${styles.sectionHeadText}`}>Portfolio.</h2>
         </motion.div>
       </div>
       
-      <ul className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`} >
-        {list.map((item, index) => (
+      <ul className={` my-5 h-[5rem]   ${styles.paddingX}  flex flex-row justify-center items-center  gap-[5rem]`} >
+        { list && list.map((item) => (
           <PortfolioList
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
-            index={index}
             id={item.id}
           />
         ))}
       </ul>
-      <div className="container">
+
+
+      <motion.div > 
+      <div className="container  flex flex-row justify-center items-center flex-wrap w-full">
         {data.map((d) => (
-          <div className="item">
-            <img
+          <Tilt
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 750,
+          }} className="item green-pink-gradient shadow-card transition-all duration-500 ease-in-out flex flex-col w-[220px] h-[16rem] justify-start items-center relative mx-[1rem] mb-[2rem] rounded-3xl">
+            <img className="w-full h-[150px] object-cover z-index-1 rounded-2xl "
               src={d.img}
               alt=""
             />
-            <h3>{d.title}</h3>
-          </div>
+            <h3 className=" my-2">{d.title}</h3>
+
+            <div className="flex flex-row justify-center items-center space-x-4">
+              <a className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"  href="#" >
+                <img className='w-full object-contain' src={livelink} alt="livelink" />
+              </a>
+              <a className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer" href="#" ><img className='w-1/2 h-1/2 object-contain' src={github} alt="github" /></a>
+
+            </div>
+
+
+            </Tilt>
         ))}
       </div>
+      </motion.div>
     </div>
       
     
