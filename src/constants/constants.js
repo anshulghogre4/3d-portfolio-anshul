@@ -511,6 +511,7 @@ const myWords = [
 const myBlogs = [
   {
     image: executioncontextjs,
+    title: "Execution Context in JavaScript and its working.",
     source_code_link:
       "https://anshulghogre.hashnode.dev/execution-context-in-javascript-and-its-working",
   },

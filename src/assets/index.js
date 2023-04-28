@@ -54,8 +54,10 @@ import productdesigner from "./projects/ui/productdesigner.png";
 import developerlanding from "./projects/ui/developerlanding.png";
 import executioncontextjs from "./projects/blogs/jsexecutioncontext.png";
 import calculator from "./projects/javascript/calculator.png";
+import hashnode from "./hasnode.png";
 export {
   logo,
+  hashnode,
   calculator,
   paytmui,
   shopifyui,
