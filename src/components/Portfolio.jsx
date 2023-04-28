@@ -16,7 +16,7 @@ import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from
         
   >
       <li
-        className={`active ? "portfolioList active" : "portfolioList" bg-indigo-950 block active:bg-indigo-700 px-[1.5rem] py-[0.5rem]  rounded-2xl   cursor-pointer`}
+        className={`active ? "portfolioList active" : "portfolioList" bg-indigo-950 block active:bg-indigo-700 px-[1.5rem] lg:py-[0.5rem] mr-[1rem]  rounded-2xl   cursor-pointer`}
         onClick={() => setSelected(id)}
       >
         {title}
@@ -26,7 +26,7 @@ import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from
   }
 
  function Portfolio() {
-  const [selected, setSelected] = useState("ui");
+  const [selected, setSelected] = useState("javascript");
   const [data, setData] = useState([]);
   const list = [
     {
@@ -63,7 +63,7 @@ import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from
         break;
       
       default:
-        setData(uIProjects);
+        setData(javaScriptProjects);
     }
   }, [selected]);
 
@@ -78,7 +78,7 @@ import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from
         </motion.div>
       </div>
       
-      <ul className={` my-5 xs:mb-[5rem] h-[5rem]   ${styles.paddingX}  flex flex-row flex-wrap justify-center items-center  gap-[5rem] xs:gap-[2rem]`} >
+      <ul className={` my-5 xs:mb-[5rem] h-[5rem]   ${styles.paddingX}  flex flex-row flex-wrap justify-center items-center  lg:gap-[5rem]  `} >
         { list && list.map((item) => (
           <PortfolioList
             title={item.title}
@@ -92,8 +92,8 @@ import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from
 
       <motion.div > 
       <div className="container  flex flex-row justify-center items-center flex-wrap w-full">
-        {data.map((d) => (
-          <Tilt
+        {data.map((d,index) => (
+          <Tilt key={index}
           options={{
             max: 45,
             scale: 1,

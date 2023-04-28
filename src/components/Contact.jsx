@@ -9,6 +9,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -34,8 +35,8 @@ const Contact = () => {
     setLoading(true);
     emailjs
       .send(
-        import.meta.env.REACT_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        "service_1q70rvm","template_7qn1rpa"
+        ,
         {
           from_name: form.name,
           to_name: "Anshul Ghogre",
@@ -43,7 +44,7 @@ const Contact = () => {
           to_email: "anshulghogre4@gmail.com",
           message: form.message,
         },
-        import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        "v_Zd0wdhl2tt5f59S"
       )
       .then(
         () => {
