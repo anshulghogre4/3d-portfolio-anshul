@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { projects } from '../constants/constants';
+import { myBlogs } from '../constants/constants';
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Blogging = () => {
@@ -23,6 +23,7 @@ const Blogging = () => {
           <h2 className={styles.sectionHeadText}>Blogging</h2>
         </motion.div>
       </div>
+      <div className=''>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -35,16 +36,17 @@ const Blogging = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper w-[50rem] h-[20rem] "
+        className="mySwiper   w-[50rem] h-[20rem] "
       >
-        {projects.map((project, index) => (
+        {myBlogs.map((myBlog, index) => (
   <SwiperSlide key={index} >
-    <div  className='cursor-pointer  h-[25rem]' onClick={() => window.open(project.source_code_link, "_blank")} >
-      <img   src={project.image} alt="images" />
+    <div  className='cursor-pointer  h-[25rem]' onClick={() => window.open(myBlog.source_code_link, "_blank")} >
+      <img   src={myBlog.image} alt="images" />
       </div>
   </SwiperSlide>
 ))}
       </Swiper>
+      </div>
   
     </div>
   )

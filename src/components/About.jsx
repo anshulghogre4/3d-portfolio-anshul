@@ -38,7 +38,7 @@ const About = () => {
       <div
         variants={fadeIn("", "", 0.1, 1)}
         className="flex items-center min-[1000px]:flex-row flex-col-reverse">
-        <p className="mt-4 text-secondary text-[17px] min-[1000px]:max-w-lg w-full leading-[30px]">
+        <p className="mt-4 xs:mt-[6rem] text-secondary text-[17px] min-[1000px]:max-w-lg w-full leading-[30px]">
         I am a skilled programmer with JavaScript, Java, Springboot and Node.js. I possess 
         strong leadership qualities and thrive in collaborative team environments. With a passion 
         for technology and attention to detail, I deliver high-quality results. I am committed to 
@@ -68,7 +68,7 @@ const About = () => {
         </Tilt>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-10 justify-center">
+      <div className="   mt-[10rem] flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

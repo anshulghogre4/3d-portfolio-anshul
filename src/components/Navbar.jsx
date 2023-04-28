@@ -44,8 +44,8 @@ const Navbar = () => {
       >
         <img src={logo} alt='logo' className='w-[10rem] h-9 object-contain' />
         <p className='text-white text-[18px] font-bold cursor-pointer flex  '>
-          Java &nbsp;
-          <span className='sm:block hidden'> | JavaScript Developer</span>
+          Web Developer
+          
         </p>
       </Link>
 

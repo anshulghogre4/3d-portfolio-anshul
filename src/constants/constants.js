@@ -3,6 +3,7 @@ import {
   backend,
   creator,
   web,
+  calculator,
   javascript,
   typescript,
   html,
@@ -27,6 +28,27 @@ import {
   mysql,
   bootstrap,
   anshul,
+  paytmui,
+  shopifyui,
+  rode,
+  discord,
+  productdesigner,
+  developerlanding,
+  executioncontextjs,
+  musicplayer,
+  customvideoplayer,
+  todojs,
+  themechanger,
+  wordcounter,
+  formvalidation,
+  todofullstack,
+  counterapp,
+  expensetracker,
+  oldportfolio,
+  uicollage,
+  bankingreact,
+  tictactoe,
+  bankingapp,
 } from "../assets";
 
 export const navLinks = [
@@ -54,12 +76,16 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "FullStack Developer",
+    icon: mobile,
   },
   {
     title: "Blogging",
@@ -208,199 +234,269 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Online Banking System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "The online banking system, for bank customers and administrators, to manage customers bank accounts. It enables bank customers to conduct virtual bank transactions, view transactions, manage beneﬁciaries, etc.",
     tags: [
       {
-        name: "react",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Springboot",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "TailwindCSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "mySQL",
+        color: "orange-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: bankingreact,
+    source_code_link:
+      "https://github.com/anshulghogre4/online-banking-springboot-react",
+    live_link:
+      "https://github.com/anshulghogre4/online-banking-springboot-react",
   },
   {
-    name: "Job IT",
+    name: "MERN Auth+Todo List",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Made full stack Todo List for multiple users uniquely, as it will require user authentication, and after authentication, the user will be able to make a todo title and then tasks, for e.g. On Sunday you have several tasks to do and then submit it will be populated to accordion style.",
     tags: [
       {
-        name: "react",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "ExpressJS",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "TailwindCSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "MongoDB",
+        color: "orange-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: todofullstack,
+    source_code_link: "https://github.com/anshulghogre4/Auth-Todo-List-MERN",
+    live_link: "https://auth-todo-list-mern.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Expense Tracker",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "I created an expense tracker or budget tracker with Reactjs to create this app, used TailwindCSS for UI and I used, hooks, custom hooks eg. use local storage () to store budgets and expenses in the browser, also I used Context API to transfer data to the component tree.",
     tags: [
       {
-        name: "nextjs",
+        name: "ReactJs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "TailwindCSS",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "ContextAPI",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: expensetracker,
+    source_code_link: "https://github.com/anshulghogre4/expense-tracker-react",
+    live_link: "https://expense-tracker-react-one.vercel.app/",
+  },
+  {
+    name: "UI Projects",
+    description:
+      "Made about more than 19 UI websites ( with classic HTML+CSS, Bootstrap+SCSS & Tailwind CSS framework), before starting these projects basic designs were available to me, and from these resources, the challenge was to make clones of all of them and I was able to accomplish all of it. All are available on GitHub with live links.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: uicollage,
+    source_code_link:
+      "https://github.com/anshulghogre4/TailwindCSS-Bootstrap-Project-Links",
+    live_link:
+      "https://github.com/anshulghogre4/TailwindCSS-Bootstrap-Project-Links",
   },
 ];
 
 const fullStackProjects = [
   {
     id: 1,
-    title: "Web Social Media App",
-    img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+    title: "Online Banking System",
+    img: bankingapp,
+    source_code_link:
+      "https://github.com/anshulghogre4/online-banking-springboot-react",
+    live_link:
+      "https://github.com/anshulghogre4/online-banking-springboot-react",
   },
   {
     id: 2,
-    title: "Web Rampa UI Design",
-    img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 3,
-    title: "Web E-commerce Design",
-    img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 4,
-    title: "Web Relax App",
-    img: "https://cdn.dribbble.com/users/2264844/screenshots/15463998/media/d85e92a332c41094f68e1f716884f7ce.jpg?compress=1&resize=1200x900",
-  },
-  {
-    id: 5,
-    title: "Web Design",
-    img: "https://cdn.dribbble.com/users/387658/screenshots/15458608/media/e92ec1dd33dd1170ae3dc9c5272f2693.jpg?compress=1&resize=1200x900",
-  },
-  {
-    id: 6,
-    title: "Web Banking App",
-    img: "https://cdn.dribbble.com/users/6384483/screenshots/15468426/media/ce9479fa1f8dba3a4a49840d76e55e31.png?compress=1&resize=1200x900",
+    title: "MERN Auth+Todo List",
+    img: todofullstack,
+    source_code_link: "https://github.com/anshulghogre4/Auth-Todo-List-MERN",
+    live_link: "https://auth-todo-list-mern.vercel.app/",
   },
 ];
 
 const reactProjects = [
   {
     id: 1,
-    title: "Mobile Social Media App",
-    img: "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
+    title: "Banking APP",
+    img: bankingreact,
+    source_code_link:
+      "https://github.com/anshulghogre4/online-banking-springboot-react",
+    live_link:
+      "https://github.com/anshulghogre4/online-banking-springboot-react",
   },
   {
     id: 2,
-    title: "Mobile Rampa UI Design",
-    img: "https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900",
+    title: "Expense Tracker",
+    img: expensetracker,
+    source_code_link: "https://github.com/anshulghogre4/expense-tracker-react",
+    live_link: "https://expense-tracker-react-one.vercel.app/",
   },
   {
     id: 3,
-    title: "Mobile E-commerce Design",
-    img: "https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900",
+    title: "Old Portfolio",
+    img: oldportfolio,
+    source_code_link: "https://github.com/anshulghogre4/Portfolio_Website",
+    live_link: "https://portfolio-website-mrghogre.vercel.app/",
   },
+
   {
     id: 4,
-    title: "Mobile Relax App",
-    img: "https://cdn.dribbble.com/users/2083704/screenshots/15468619/media/cd958306c7a772449e1ac23bd65ce506.png?compress=1&resize=1200x900",
+    title: "Tic Tac Toe",
+    img: tictactoe,
+    source_code_link: "https://github.com/anshulghogre4/React-tic-tac-toe",
+    live_link: "https://react-tic-tac-toe-practice.vercel.app/",
   },
   {
     id: 5,
-    title: "Mobile Hero Design",
-    img: "https://cdn.dribbble.com/users/26642/screenshots/15462545/media/1a202ef5c8338b6f78634e6edc1ba350.png?compress=1&resize=1200x900",
-  },
-  {
-    id: 6,
-    title: "Mobile Banking App",
-    img: "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+    title: "Counter App",
+    img: counterapp,
+    source_code_link: "https://github.com/anshulghogre4/react-counter-practice",
+    live_link: "https://react-counter-practice.vercel.app/",
   },
 ];
 
 const javaScriptProjects = [
   {
     id: 1,
-    title: "Design Social Media App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Custom Video Player",
+    img: customvideoplayer,
+    source_code_link:
+      "https://github.com/anshulghogre4/js-assignment-2-video-player",
+    live_link: "https://js-assig-2-project-video-player.netlify.app/",
   },
   {
     id: 2,
-    title: "Design Rampa UI Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Music Player",
+    img: musicplayer,
+    source_code_link:
+      "https://github.com/anshulghogre4/js-assignment-2-music-player",
+    live_link: "https://js-assig-project-music-player.netlify.app/",
   },
   {
     id: 3,
-    title: "Design E-commerce Web Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Theme Changer",
+    img: themechanger,
+    source_code_link:
+      "https://github.com/anshulghogre4/js-assignment-2-theme-changer",
+    live_link: "https://js-assig-2-theme-changer.netlify.app/",
   },
   {
     id: 4,
-    title: "Design Relax Mobile App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Form Validation",
+    img: formvalidation,
+    source_code_link:
+      "https://github.com/anshulghogre4/js-assignment-2-form-validation",
+    live_link: "https://js-assig-2-project-form-validation.netlify.app/",
   },
   {
     id: 5,
-    title: "Design Keser Web Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Todo App JS",
+    img: todojs,
+    source_code_link:
+      "https://github.com/anshulghogre4/js-assignment-2-todo-list-app",
+    live_link: "https://js-assig-2-todo-app.netlify.app/",
   },
   {
     id: 6,
-    title: "Design Banking App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Word Counter",
+    img: wordcounter,
+    source_code_link:
+      "https://github.com/anshulghogre4/JS-Assignment-2-word-counter",
+    live_link: "https://js-assig-2-word-counter-app.netlify.app/",
+  },
+  {
+    id: 7,
+    title: "Calculator",
+    img: calculator,
+    source_code_link:
+      "https://github.com/anshulghogre4/js-assignment-2-calculator-app",
+    live_link: "https://js-assig-2-calculator-app.netlify.app/",
   },
 ];
 
 const uIProjects = [
   {
     id: 1,
-    title: "Content Social Media App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Paytm UI",
+    img: paytmui,
+    source_code_link:
+      "https://github.com/anshulghogre4/Project-16-Paytm-Home-Page-UI",
+    live_link: "https://project-16-payment-app-home-page-ui.netlify.app/",
   },
   {
     id: 2,
-    title: "Content Rampa UI Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Shopify UI",
+    img: shopifyui,
+    source_code_link:
+      "https://github.com/anshulghogre4/Project-17-Shopify-Home-page-UI",
+    live_link: "https://project-17-shopify-home-page-ui.netlify.app/",
   },
   {
     id: 3,
-    title: "Content E-commerce Web Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "RODE UI",
+    img: rode,
+    source_code_link:
+      "https://github.com/anshulghogre4/Project-18-R-DE-Home-page-UI",
+    live_link: "https://project-18-rode-home-page-ui.netlify.app/",
   },
   {
     id: 4,
-    title: "Content Relax Mobile App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Discord UI",
+    img: discord,
+    source_code_link: "https://github.com/anshulghogre4/Discord-UI-Home-Page",
+    live_link: "https://discordui-task.netlify.app/",
   },
   {
     id: 5,
-    title: "Content Keser Web Design",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Product Designer UI",
+    img: productdesigner,
+    source_code_link:
+      "https://github.com/anshulghogre4/Project-15-Product-Design-Landing-Page",
+    live_link: "https://project-15-product-design-landing-pag.netlify.app/",
   },
   {
     id: 6,
-    title: "Content Banking App",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    title: "Developer Landing UI",
+    img: developerlanding,
+    source_code_link:
+      "https://github.com/anshulghogre4/Project-9-Developer-Landing-Page",
+    live_link: "https://project-9-developer-landing-page1.netlify.app/",
   },
 ];
 const myWords = [
@@ -411,7 +507,16 @@ const myWords = [
     image: anshul,
   },
 ];
+
+const myBlogs = [
+  {
+    image: executioncontextjs,
+    source_code_link:
+      "https://anshulghogre.hashnode.dev/execution-context-in-javascript-and-its-working",
+  },
+];
 export {
+  myBlogs,
   services,
   technologies,
   experiences,

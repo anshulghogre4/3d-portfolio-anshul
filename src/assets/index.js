@@ -32,9 +32,51 @@ import springboot from "./tech/springboot.png";
 import livelink from "./livelink.png";
 import modelman from "./modelman.png";
 import anshul from "./anshul.jpg";
-
+import bankingapp from "./projects/fullstack/banking.png";
+import todofullstack from "./projects/fullstack/todo.png";
+import expensetracker from "./projects/react/moneytracker.png";
+import uicollage from "./projects/uicollage.png";
+import bankingreact from "./projects/react/banking.png";
+import oldportfolio from "./projects/react/oldportfolio.png";
+import tictactoe from "./projects/react/tictactoe.png";
+import counterapp from "./projects/react/counterapp.png";
+import musicplayer from "./projects/javascript/musicplayer.png";
+import customvideoplayer from "./projects/javascript/customvideoplayer.png";
+import themechanger from "./projects/javascript/themechanger.png";
+import wordcounter from "./projects/javascript/wordcounterapp.png";
+import formvalidation from "./projects/javascript/formvalidation.png";
+import todojs from "./projects/javascript/todo.png";
+import paytmui from "./projects/ui/paytm.png";
+import shopifyui from "./projects/ui/shopify.png";
+import rode from "./projects/ui/rode.png";
+import discord from "./projects/ui/discord.png";
+import productdesigner from "./projects/ui/productdesigner.png";
+import developerlanding from "./projects/ui/developerlanding.png";
+import executioncontextjs from "./projects/blogs/jsexecutioncontext.png";
+import calculator from "./projects/javascript/calculator.png";
 export {
   logo,
+  calculator,
+  paytmui,
+  shopifyui,
+  rode,
+  discord,
+  productdesigner,
+  developerlanding,
+  executioncontextjs,
+  musicplayer,
+  customvideoplayer,
+  todojs,
+  themechanger,
+  wordcounter,
+  formvalidation,
+  todofullstack,
+  counterapp,
+  expensetracker,
+  oldportfolio,
+  uicollage,
+  bankingreact,
+  tictactoe,
   backend,
   creator,
   mobile,
@@ -68,4 +110,5 @@ export {
   livelink,
   modelman,
   anshul,
+  bankingapp,
 };

@@ -26,7 +26,7 @@ import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from
   }
 
  function Portfolio() {
-  const [selected, setSelected] = useState("fullstack");
+  const [selected, setSelected] = useState("ui");
   const [data, setData] = useState([]);
   const list = [
     {
@@ -63,7 +63,7 @@ import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from
         break;
       
       default:
-        setData(fullStackProjects);
+        setData(uIProjects);
     }
   }, [selected]);
 
@@ -78,7 +78,7 @@ import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from
         </motion.div>
       </div>
       
-      <ul className={` my-5 h-[5rem]   ${styles.paddingX}  flex flex-row justify-center items-center  gap-[5rem]`} >
+      <ul className={` my-5 xs:mb-[5rem] h-[5rem]   ${styles.paddingX}  flex flex-row flex-wrap justify-center items-center  gap-[5rem] xs:gap-[2rem]`} >
         { list && list.map((item) => (
           <PortfolioList
             title={item.title}
@@ -106,11 +106,10 @@ import { fullStackProjects, reactProjects, javaScriptProjects, uIProjects } from
             <h3 className=" my-2">{d.title}</h3>
 
             <div className="flex flex-row justify-center items-center space-x-4">
-              <a className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"  href="#" >
+              <a className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"  href={d.live_link} target="_blank" >
                 <img className='w-full object-contain' src={livelink} alt="livelink" />
               </a>
-              <a className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer" href="#" ><img className='w-1/2 h-1/2 object-contain' src={github} alt="github" /></a>
-
+              <a className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer" href={d.source_code_link} target="_blank"><img className='w-1/2 h-1/2 object-contain' src={github} alt="github" /></a>
             </div>
 
 
