@@ -4,7 +4,7 @@ import { styles } from "../styles"
 import { SectionWrapper } from "../hoc"
 import { fadeIn, textVariant } from "../utils/motion"
 import { modelman } from "../assets"
-import Res from "../assets/resume.pdf"
+import Res from "..assets/resumenew.pdf"
 import { anshul } from "../assets"
 import {myWords} from '../constants/constants'
 
